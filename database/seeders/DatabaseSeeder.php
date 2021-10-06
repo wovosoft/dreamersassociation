@@ -26,8 +26,8 @@ class DatabaseSeeder extends Seeder
                 "password" => Hash::make("admin123456789")
             ])
             ->saveOrFail();
-        Member::factory(200)->create();
-        Expense::factory(400)->create();
-        Deposit::factory(300)->create();
+       // Member::factory(200)->create();
+       // Expense::factory(400)->create();
+       // Deposit::factory(300)->create();
     }
 }
