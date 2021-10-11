@@ -19,7 +19,7 @@ class MemberController extends Controller
                 "id" => "numeric|nullable",
                 "membership_no" => "string|required",
                 "name" => "string|required",
-                "pf_index" => "alpha_num|required|min:2|max:8",
+                "pf_index" => "string|required|min:2|max:8",
                 "current_workplace" => "string|nullable",
                 "bank_joining_date" => "date_format:Y-m-d|nullable",
                 "membership_entry_date" => "date_format:Y-m-d|nullable",
