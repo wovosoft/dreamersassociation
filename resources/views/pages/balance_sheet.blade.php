@@ -56,9 +56,8 @@
     <table class="datatable">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
                 <th>Membership No</th>
+                <th>Name</th>
                 <th>PF Index</th>
                 <th>Current Workplace</th>
                 <th>Total Deposit</th>
@@ -69,9 +68,8 @@
         <tbody>
             @foreach ($items as $item)
                 <tr>
-                    <td>{{ $item->id }}</td>
-                    <td>{{ $item->name }}</td>
                     <td>{{ $item->membership_no }}</td>
+                    <td>{{ $item->name }}</td>
                     <td>{{ $item->pf_index }}</td>
                     <td>{{ $item->current_workplace }}</td>
                     <td class="text-right">{{ number_format($item->deposit_amount, 2) }}</td>
