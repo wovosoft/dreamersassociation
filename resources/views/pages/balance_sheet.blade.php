@@ -56,10 +56,11 @@
     <table class="datatable">
         <thead>
             <tr>
-                <th>Membership No</th>
+                <th>Mem. No</th>
                 <th>PF Index</th>
                 <th>Name</th>
                 <th>Phone</th>
+                <th>Secondary Phone</th>
                 <th>Total Deposit</th>
                 <th>Total Withdraw</th>
                 <th>Balance</th>
@@ -68,10 +69,11 @@
         <tbody>
             @foreach ($items as $item)
                 <tr>
-                <td>{{ $item->pf_index }}</td>
                     <td>{{ $item->membership_no }}</td>
+                    <td>{{ $item->pf_index }}</td>
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->phone }}</td>
+                    <td>{{ $item->secondary_phone }}</td>
                     <td class="text-right">{{ number_format($item->deposit_amount, 2) }}</td>
                     <td class="text-right">{{ number_format($item->withdraw_amount, 2) }}</td>
                     <td class="text-right">
